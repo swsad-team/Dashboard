@@ -14,6 +14,7 @@
   - realname
   - age
   - male / female
+  - studentID
 
 - **组织号**
   - name （组织名称，如：中大学生会、皇茶等）
