@@ -1,44 +1,54 @@
 # 数据格式
+
 ## User
-- User分为**组织号**和**个人号**（两种仅填写信息不同，可执行操作是一样的）
+- User分为**组织号**和**个人号**（*斜的数据为用户填写*）
 
 - **通用属性**
-  - phone
-  - e-mail （用phone或email这两个信息来登录）
-  - nickname
-  - password
-  - isOrganization （是否组织号）
-  - icon （头像，用户不选头像则有个默认的）
+  - uid （随机生成）
+  - *phone*
+  - *e-mail* （用phone或email这两个信息来登录）
+  - *name*
+  - *password*
+  - *isOrganization* （是否组织号）
+  - *icon* （头像，用户不选头像则有个默认的）
+  - coin （默认100）
 
 - **个人号**
-  - realname
-  - age
-  - male / female
-  - studentID
+  - *realname*
+  - *birthYear*
+  - *gender*
+  - *studentId*
 
 - **组织号**
-  - name （组织名称，如：中大学生会、皇茶等）
-  - address （组织所在地址）
-
-- **其它属性**（不需要用户注册填写的）
-  - money
-  - ...
+  - *address* （组织所在地址）
 
 ## Task
-  - **发布人填写**
-    - title （如：“关于大学生每日游戏时间”）
-    - due time （截止时间）
-    - reward （悬赏金额，仅能整数，如2，每个填问卷的人都能获得2金）
-    - number of people （需最多多少人填问卷）
-
-  - **无需填写**
-    - published time （发布时间）
-    - ...
-
-# UI设计
-  - 以下设计供参考，由前端的同学决定
-    ![](./simple-ui-design.png)
+  - **task**
+    - tid  (randomly get)
+    - qid  （questionnaireId, 若为其它任务则none）
+    - *title* （如：“关于大学生每日游戏时间”）
+    - *description*
+    - startTime
+    - *endTime*
+    - *reward* （悬赏金额）
+    - coinPool （奖金池，仅能整数，如20，需10人，则每人获2金）
+    - *numOfPeople* （所需人数）
+    - participant[] （存储参与者的uid）
+    - finisher[]
   
-  - 先按照上面的数据格式，自定义几个task显示在UI上
+  - **questionnaire**
+    - qid
+    - question[] （问题1、问题2）
+      - isRequired （必填）
+      - type （问答、单选、多选）
+      - option[] （问答题为none，数组的值为选项内容，如苹果、香蕉）
+  
+  - **result**
+    - aid
+    - qid （对应问题的id
+    - uid （回答者的id
+    - answer[] （例：问答题"happy"，单选"0""1"，多选"012"）
 
-  - 点击任务进入问卷页面
+---
+
+# API
