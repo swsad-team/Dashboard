@@ -35,19 +35,17 @@
     - *numOfPeople* （所需人数）
     - participant[] （存储参与者的uid）
     - finisher[]
-  
-  - **questionnaire**
-    - qid
-    - question[] （问题1、问题2）
+    - questionnaire[]
       - isRequired （必填）
       - type （问答、单选、多选）
+      - title （问题题干）
       - option[] （问答题为none，数组的值为选项内容，如苹果、香蕉）
   
-  - **result**
+  - **answer**
     - aid
-    - qid （对应问题的id
+    - tid （对应问题的任务id
     - uid （回答者的id
-    - answer[] （例：问答题"happy"，单选"0""1"，多选"012"）
+    - content[] （例：问答题"happy"，单选"0""1"，多选"012"）
 
 ---
 
