@@ -25,7 +25,7 @@
 ## Task
   - **task**
     - tid  (randomly get)
-    - qid  （questionnaireId, 若为其它任务则none）
+    - publisherId （任务发布人的uid）
     - *title* （如：“关于大学生每日游戏时间”）
     - *description*
     - *isQuestion* （是问卷调查还是其它任务）
@@ -43,10 +43,10 @@
       - option[] （问答题为none，数组的值为选项内容，如苹果、香蕉）
   
   - **answer**
-    - aid
     - tid （对应问题的任务id
-    - uid （回答者的id
-    - content[] （例：问答题"happy"，单选"0""1"，多选"012"）
+    - answer[]
+      - uid （回答者的id
+      - content[] （例：问答题"happy"，单选"0""1"，多选"012"）
 
 ---
 
