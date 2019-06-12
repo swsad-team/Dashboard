@@ -28,6 +28,7 @@
     - qid  （questionnaireId, 若为其它任务则none）
     - *title* （如：“关于大学生每日游戏时间”）
     - *description*
+    - *isQuestion* （是问卷调查还是其它任务）
     - startTime
     - *endTime*
     - *reward* （悬赏金额）

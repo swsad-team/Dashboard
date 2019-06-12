@@ -84,6 +84,60 @@ paths:
           description: Password doesnot match account
         404:
           description: Not found account
+  /task/page:
+    get:
+      tags:
+        - task
+      summary: Get count of pages
+      description: Count of pages = round( Count of task / 10 ); e.g. task 34, page 4
+      responses:
+        default:
+          description: return the integer of pageNum, 0 if no tasks
+          schema:
+            type: integer
+            example: 4
+  /task/{pageId}:
+    get:
+      tags:
+        - task
+      summary: Get an array of tasks
+      description: pageId is 0~n, get 10 tasks each page
+      parameters:
+        - name: pageId
+          in: path
+          description: The id of page, start from 0
+          required: true
+          type: integer
+      responses:
+        200:
+          description: OK, return 1~10 tasks
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                tid:
+                  type: number
+                title:
+                  type: string
+                description:
+                  type: string
+                isQuestion:
+                  type: string
+                startTime:
+                  type: string
+                  format: date-time
+                endTime:
+                  type: string
+                  format: date-time
+                reward:
+                  type: number
+                coinPool:
+                  type: number
+                numOfPeople:
+                  type: number
+        404:
+          description: Not found page (pageId > pageNum)
 definitions:
   User:
     type: object
@@ -127,6 +181,8 @@ definitions:
         type: string
       description:
         type: string
+      isQuestion:
+        type: boolean
       startTime:
         type: string
         format: date-time
