@@ -1,69 +1,88 @@
 swagger: '2.0'
 info:
-  version: 1.0.0
+  version: 0.5.0
   title: Swagger Earnmoney
-host: petstore.swagger.io
-basePath: /v2
+host: localhost:3000
+basePath: '/'
 tags:
   - name: user
     description: Operations about user
   - name: task
     description: Operations about task
 schemes:
-  - https
   - http
+  - https
 paths:
   /user/signup:
     post:
       tags:
         - user
       summary: Sign up a user
-      description: This can only be done when user sign up.
-      operationId: signupUser
-      produces:
-        - application/xml
-        - application/json
+      description: ''
       parameters:
-        - in: body
-          name: body
-          description: Sign up user object
+        - name: body
+          in: body
           required: true
           schema:
-            $ref: '#/definitions/User'
+            type: object
+            properties:
+              email:
+                type: string
+              phone:
+                type: string
+              name:
+                type: string
+              password:
+                type: string
+              isOrganization:
+                type: boolean
+              realname:
+                type: string
+              birthYear:
+                type: number
+              gender:
+                type: string
+                enum:
+                  - male
+                  - female
+                  - other
+              studentID:
+                type: string
+              address:
+                type: string
       responses:
-        '200':
-          description: successful operation
-        '400':
-          description: email/phone exists
+        200:
+          description: OK
+        400:
+          description: email/phone exists, return error message
           schema:
             type: string
   /user/login:
     get:
       tags:
         - user
-      summary: Logs user into the system
+      summary: User login
       description: ''
-      operationId: loginUser
-      produces:
-        - application/xml
-        - application/json
       parameters:
-        - name: account
-          in: query
-          description: The user phone/email for login
+        - name: body
+          in: body
+          description: The phone/email & password for login
           required: true
-          type: string
-        - name: password
-          in: query
-          description: The password for login in clear text
-          required: true
-          type: string
+          schema:
+            type: object
+            properties:
+              account:
+                type: string
+              password:
+                type: string
       responses:
-        '200':
-          description: successful operation
-        '400':
-          description: Invalid password
-        '404':
+        200:
+          description: successfully login, return a token
+          schema:
+            type: string
+        400:
+          description: Password doesnot match account
+        404:
           description: Not found account
 definitions:
   User:
