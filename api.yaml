@@ -87,6 +87,25 @@ paths:
           description: Password doesnot match account
         404:
           description: Not found account
+  /users/{uid}:
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: ''
+      parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: string
+      responses:
+        200:
+          description: Successfully delete the user
+        # 400:
+        #   description: Invalid
+        404:
+          description: Not found user
   /task:
     post:
       tags:
@@ -144,14 +163,14 @@ paths:
           description: Create task OK
         400:
           description: Not enough coin
-  /task/{taskId}:
+  /task/{tid}:
     get:
       tags:
         - task
       summary: Get a task by tid
       description: ''
       parameters:
-        - name: taskId
+        - name: tid
           in: path
           description: The tid of task
           required: true
@@ -161,6 +180,41 @@ paths:
           description: OK, return all info
           schema:
             $ref: "#/definitions/Task"
+        404:
+          description: Not found task
+    delete:
+      tags:
+        - task
+      summary: Delete task
+      description: Delete task & answerList
+      parameters:
+        - name: tid
+          in: path
+          description: The tid of the task
+          required: true
+          type: string
+      responses:
+        200:
+          description: Successfully delete the task
+        # 400:
+        #   description: Invalid
+        404:
+          description: Not found task
+    patch:
+      tags:
+        - task
+      summary: Update a task
+      description: Mainly used to complete a task
+      parameters:
+        - name: body
+          in: body
+          description: The info to update (optional)
+          required: true
+          schema:
+            $ref: "#/definitions/Task"
+      responses:
+        200:
+          description: Successfully update
         404:
           description: Not found task
   /tasks:
@@ -195,16 +249,16 @@ paths:
             $ref: "#/definitions/TaskInfoList"
         404:
           description: Not found (page == 0 || page > total_page || invalid per_page)
-  /task/{taskId}/answer:
+  /task/{tid}/answer:
     post:
       tags:
         - answer
       summary: Store an answer
       description: Store answer of a task(questionnaire)
       parameters:
-        - name: answer
+        - name: body
           in: body
-          description: use taskId to find answerList, to insert answer
+          description: use tid to find answerList, to insert answer
           required: true
           schema:
             $ref: "#/definitions/Answer"
@@ -213,23 +267,27 @@ paths:
           description: OK
         404:
           description: Not found task(questionnaire)
+  /task/{tid}/answers:
     get:
       tags:
         - answer
-      summary: Store an answer
-      description: Store answer of a task(questionnaire)
+      summary: Get all answers
+      description: Get answer list of a task(questionnaire)
       parameters:
-        - name: answer
-          in: body
-          description: use taskId to find answerList, to insert answer
+        - name: tid
+          in: path
+          description: The tid of task
           required: true
-          schema:
-            $ref: "#/definitions/Answer"
+          type: integer
       responses:
         200:
           description: OK
+          schema:
+            type: array
+            items:
+              $ref: "#/definitions/Answer"
         404:
-          description: Not found task(questionnaire)
+          description: Not found (page)
   #
 #end paths
 
@@ -280,6 +338,8 @@ definitions:
       description:
         type: string
       isQuestion:
+        type: boolean
+      isCompleted:
         type: boolean
       startTime:
         type: string
