@@ -16,7 +16,7 @@ schemes:
   - https
 
 paths:
-  /user/signup:
+  /user:
     post:
       tags:
         - user
@@ -87,7 +87,7 @@ paths:
           description: Password doesnot match account
         404:
           description: Not found account
-  /users/{uid}:
+  /user/{uid}:
     delete:
       tags:
         - user
@@ -106,6 +106,67 @@ paths:
         #   description: Invalid
         404:
           description: Not found user
+    get:
+      tags:
+        - user
+      summary: Get a user
+      description: ''
+      parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/User"
+        404:
+          description: Not found user
+  /users:
+    get:
+      tags:
+        - user
+      summary: Get many users
+      description: Get user list by uid array
+      parameters:
+        - name: body
+          in: body
+          description: The uid[]
+          required: true
+          type: array
+          items:
+            type: string
+      responses:
+        200:
+          description: return a list of user info
+          schema:
+            type: array
+            items:
+              # $ref: "#/definitions/User"
+              type: object
+              properties:
+                uid:
+                  type: string
+                email:
+                  type: string
+                phone:
+                  type: string
+                name:
+                  type: string
+                isOrganization:
+                  type: boolean
+                gender:
+                  type: string
+                  enum:
+                    - male
+                    - female
+                    - other
+                studentID:
+                  type: string
+        400:
+          description: uid array empty
   /task:
     post:
       tags:
