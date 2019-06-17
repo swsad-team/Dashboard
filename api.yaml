@@ -57,9 +57,10 @@ paths:
         200:
           description: OK
         400:
-          description: email/phone exists, return error message
+          description: email/phone/name exists, return one of them to show error
           schema:
             type: string
+            enum: ['email', 'phone', 'name']
     get:
       tags:
         - user
