@@ -16,7 +16,7 @@ schemes:
   - https
 
 paths:
-  /user:
+  /users:
     post:
       tags:
         - user
@@ -60,71 +60,6 @@ paths:
           description: email/phone exists, return error message
           schema:
             type: string
-  /user/login:
-    get:
-      tags:
-        - user
-      summary: User login
-      description: ''
-      parameters:
-        - name: body
-          in: body
-          description: The phone/email & password for login
-          required: true
-          schema:
-            type: object
-            properties:
-              account:
-                type: string
-              password:
-                type: string
-      responses:
-        200:
-          description: successfully login, return a token
-          schema:
-            type: string
-        400:
-          description: Password doesnot match account
-        404:
-          description: Not found account
-  /user/{uid}:
-    delete:
-      tags:
-        - user
-      summary: Delete user
-      description: ''
-      parameters:
-        - name: uid
-          in: path
-          description: The uid of the user
-          required: true
-          type: string
-      responses:
-        200:
-          description: Successfully delete the user
-        # 400:
-        #   description: Invalid
-        404:
-          description: Not found user
-    get:
-      tags:
-        - user
-      summary: Get a user
-      description: ''
-      parameters:
-        - name: uid
-          in: path
-          description: The uid of the user
-          required: true
-          type: string
-      responses:
-        200:
-          description: OK
-          schema:
-            $ref: "#/definitions/User"
-        404:
-          description: Not found user
-  /users:
     get:
       tags:
         - user
@@ -167,7 +102,102 @@ paths:
                   type: string
         400:
           description: uid array empty
-  /task:
+  /users/login:
+    get:
+      tags:
+        - user
+      summary: User login
+      description: ''
+      parameters:
+        - name: body
+          in: body
+          description: The phone/email & password for login
+          required: true
+          schema:
+            type: object
+            properties:
+              account:
+                type: string
+              password:
+                type: string
+      responses:
+        200:
+          description: successfully login, return a token
+          schema:
+            type: string
+        400:
+          description: Password doesnot match account
+        404:
+          description: Not found account
+  /users/{uid}:
+    get:
+      tags:
+        - user
+      summary: Get a user
+      description: ''
+      parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: "#/definitions/User"
+        404:
+          description: Not found user 
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: ''
+      parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: string
+      responses:
+        200:
+          description: Successfully delete the user
+        # 400:
+        #   description: Invalid
+        404:
+          description: Not found user
+  /tasks:
+    get:
+      tags:
+        - task
+      summary: Get tasks list and total page
+      description: ''
+      parameters:
+        - name: page
+          in: query
+          description: The id of page, start from 1
+          required: true
+          type: integer
+        - name: per_page
+          in: query
+          description: num of tasks per page
+          required: true
+          type: integer
+        - name: filter
+          in: query
+          description: "enum ['personal', 'organizational', 'participable'] (multiple)"
+          type: string
+        - name: sort
+          in: query
+          description: "enum ['time', 'coin'] (single)"
+          type: string
+      responses:
+        200:
+          description: OK, return {per_page} tasks
+          schema:
+            $ref: "#/definitions/TaskInfoList"
+        404:
+          description: Not found (page == 0 || page > total_page || invalid per_page)
     post:
       tags:
         - task
@@ -224,7 +254,7 @@ paths:
           description: Create task OK
         400:
           description: Not enough coin
-  /task/{tid}:
+  /tasks/{tid}:
     get:
       tags:
         - task
@@ -278,39 +308,7 @@ paths:
           description: Successfully update
         404:
           description: Not found task
-  /tasks:
-    get:
-      tags:
-        - task
-      summary: Get tasks list and total page
-      description: ''
-      parameters:
-        - name: page
-          in: query
-          description: The id of page, start from 1
-          required: true
-          type: integer
-        - name: per_page
-          in: query
-          description: num of tasks per page
-          required: true
-          type: integer
-        - name: filter
-          in: query
-          description: "enum ['personal', 'organizational', 'participable'] (multiple)"
-          type: string
-        - name: sort
-          in: query
-          description: "enum ['time', 'coin'] (single)"
-          type: string
-      responses:
-        200:
-          description: OK, return {per_page} tasks
-          schema:
-            $ref: "#/definitions/TaskInfoList"
-        404:
-          description: Not found (page == 0 || page > total_page || invalid per_page)
-  /task/{tid}/answer:
+  /tasks/{tid}/answer:
     post:
       tags:
         - answer
@@ -328,7 +326,7 @@ paths:
           description: OK
         404:
           description: Not found task(questionnaire)
-  /task/{tid}/answers:
+  /tasks/{tid}/answers:
     get:
       tags:
         - answer
