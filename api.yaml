@@ -57,10 +57,10 @@ paths:
         200:
           description: OK
         400:
-          description: email/phone/name exists, return one of them to show error
+          description: "email/phone/name/studentID exists, return one of them to show error; 'invalid' means input validation on FrontEnd bad, plz check src code"
           schema:
             type: string
-            enum: ['email', 'phone', 'name']
+            enum: ['email', 'phone', 'name', 'studentID', 'invalid']
     get:
       tags:
         - user
