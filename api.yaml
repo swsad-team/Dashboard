@@ -309,6 +309,31 @@ paths:
           description: Successfully update
         404:
           description: Not found task
+  /tasks/{tid}/participate/{uid}:
+    get:
+      tags:
+        - task
+      summary: User participate a task
+      description: ''
+      parameters:
+        - name: tid
+          in: path
+          description: The tid of task
+          required: true
+          type: integer
+        - name: uid
+          in: path
+          description: The uid of user
+          required: true
+          type: integer
+      responses:
+        200:
+          description: OK
+        404:
+          description: Not found task/user
+          schema:
+            type: string
+            enum: ['task', 'user']
   /tasks/{tid}/answer:
     post:
       tags:
