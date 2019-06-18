@@ -103,6 +103,25 @@ paths:
                   type: string
         400:
           description: uid array empty
+    patch:
+      tags:
+        - user
+      summary: Update a user
+      description: Update a part of info
+      parameters:
+        - name: body
+          in: body
+          description: The info to update (optional)
+          required: true
+          schema:
+            $ref: "#/definitions/UserUpdate"
+      responses:
+        200:
+          description: Successfully update, return the new data
+          schema:
+            $ref: "#/definitions/User"
+        404:
+          description: Not found user
   /users/login:
     get:
       tags:
@@ -520,6 +539,33 @@ definitions:
               type: number
       total_page:
         type: integer
+  UserUpdate:
+    type: object
+    properties:
+      email:
+        type: string
+      phone:
+        type: string
+      name:
+        type: string
+      password:
+        type: string
+      coin:
+        type: number
+      realname:
+        type: string
+      birthYear:
+        type: number
+      gender:
+        type: string
+        enum:
+          - male
+          - female
+          - other
+      address:
+        type: string
+    xml:
+      name: User
 
 externalDocs:
   description: Find out more about Swagger
