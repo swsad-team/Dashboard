@@ -73,7 +73,7 @@ paths:
           required: true
           type: array
           items:
-            type: string
+            type: integer
       responses:
         200:
           description: return a list of user info
