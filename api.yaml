@@ -186,7 +186,7 @@ paths:
           type: integer
         - name: filter
           in: query
-          description: "enum ['personal', 'organizational', 'participable'] (multiple)"
+          description: "enum ['personal', 'organizational', 'participable', 'question', 'other'] (multiple)"
           type: string
         - name: sort
           in: query
