@@ -11,7 +11,7 @@ layout: default
 * 3、项目业务调研
 * 4、产品特性
 * 5、需求规格说明
-    - 5.1 [用例图](usecase_diagram)
+    - 5.1 [用例图](pictures/usecase_diagram.png)
     - 5.2 活动图
     - 5.3 领域模型
     - 5.4 状态模型
