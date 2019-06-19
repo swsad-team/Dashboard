@@ -149,24 +149,6 @@ paths:
             $ref: "#/definitions/User"
         404:
           description: Not found user 
-    delete:
-      tags:
-        - user
-      summary: Delete user
-      description: ''
-      parameters:
-        - name: uid
-          in: path
-          description: The uid of the user
-          required: true
-          type: string
-      responses:
-        200:
-          description: Successfully delete the user
-        # 400:
-        #   description: Invalid
-        404:
-          description: Not found user
     patch:
       tags:
         - user
@@ -218,6 +200,31 @@ paths:
                 type: boolean
         404:
           description: Today is checked
+  /users/delete:
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: ''
+      parameters:
+        - name: body
+          in: body
+          description: The uid & password for delete
+          required: true
+          schema:
+            type: object
+            properties:
+              uid:
+                type: integer
+              password:
+                type: string
+      responses:
+        200:
+          description: Successfully delete the user
+        400:
+          description: PASSWORD_INCORRECT
+        404:
+          description: Not found user
   /tasks:
     get:
       tags:
