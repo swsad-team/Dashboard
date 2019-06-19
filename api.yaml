@@ -185,6 +185,8 @@ paths:
           description: Successfully update, return the new data
           schema:
             $ref: "#/definitions/User"
+        400:
+          description: Invalid input (email, phone, coin, studentID, uid, isOrga)
         404:
           description: Not found user
   /users/{uid}/check:
