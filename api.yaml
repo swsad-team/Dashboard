@@ -67,8 +67,8 @@ paths:
       summary: Get many users
       description: Get user list by uid array
       parameters:
-        - name: body
-          in: body
+        - name: uid
+          in: query
           description: The uid[]
           required: true
           type: array
@@ -76,7 +76,7 @@ paths:
             type: integer
       responses:
         200:
-          description: return a list of user info
+          description: return a list of user info, never get organizationUser in reality
           schema:
             type: array
             items:
@@ -104,7 +104,7 @@ paths:
         400:
           description: uid array empty
   /users/login:
-    get:
+    post:
       tags:
         - user
       summary: User login
@@ -130,7 +130,6 @@ paths:
           description: Password doesnot match account
         404:
           description: Not found account
-
   /users/{uid}:
     get:
       tags:
@@ -174,6 +173,11 @@ paths:
       summary: Update a user
       description: Update a part of info
       parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: integer
         - name: body
           in: body
           description: The info to update (optional)
@@ -345,6 +349,11 @@ paths:
       summary: Update a task
       description: Mainly used to complete a task
       parameters:
+        - name: tid
+          in: path
+          description: The tid of the task
+          required: true
+          type: integer
         - name: body
           in: body
           description: The info to update (optional)
