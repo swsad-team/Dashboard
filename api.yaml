@@ -103,25 +103,6 @@ paths:
                   type: string
         400:
           description: uid array empty
-    patch:
-      tags:
-        - user
-      summary: Update a user
-      description: Update a part of info
-      parameters:
-        - name: body
-          in: body
-          description: The info to update (optional)
-          required: true
-          schema:
-            $ref: "#/definitions/UserUpdate"
-      responses:
-        200:
-          description: Successfully update, return the new data
-          schema:
-            $ref: "#/definitions/User"
-        404:
-          description: Not found user
   /users/login:
     get:
       tags:
@@ -149,6 +130,7 @@ paths:
           description: Password doesnot match account
         404:
           description: Not found account
+
   /users/{uid}:
     get:
       tags:
@@ -186,6 +168,50 @@ paths:
         #   description: Invalid
         404:
           description: Not found user
+    patch:
+      tags:
+        - user
+      summary: Update a user
+      description: Update a part of info
+      parameters:
+        - name: body
+          in: body
+          description: The info to update (optional)
+          required: true
+          schema:
+            $ref: "#/definitions/UserUpdate"
+      responses:
+        200:
+          description: Successfully update, return the new data
+          schema:
+            $ref: "#/definitions/User"
+        404:
+          description: Not found user
+  /users/{uid}/check:
+    get:
+      tags:
+        - user
+      summary: User check to get 50 coin
+      description: ''
+      parameters:
+        - name: uid
+          in: path
+          description: The uid of the user
+          required: true
+          type: string
+      responses:
+        200:
+          description: OK, add 50 coin, return the coin data
+          schema:
+            type: object
+            properties:
+              coin:
+                type: integer
+                example: 150
+              isChecked:
+                type: boolean
+        404:
+          description: Today is checked
   /tasks:
     get:
       tags:
@@ -414,6 +440,8 @@ definitions:
         type: boolean
       coin:
         type: number
+      isChecked:
+        type: boolean
       realname:
         type: string
       birthYear:
@@ -542,16 +570,10 @@ definitions:
   UserUpdate:
     type: object
     properties:
-      email:
-        type: string
-      phone:
-        type: string
       name:
         type: string
       password:
         type: string
-      coin:
-        type: number
       realname:
         type: string
       birthYear:
