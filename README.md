@@ -1,31 +1,37 @@
----
-layout: default
----
+## Welcome to GitHub Pages
 
-# [](#TOC)目录
+You can use the [editor on GitHub](https://github.com/sysu-sasd-project/dashboard/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
 
-&nbsp;&nbsp; 
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-* 1、[About](01-about) (项目概况)
-* 2、[团队成员](02-TeamMember/Readme.md)
-* 3、项目业务调研
-* 4、产品特性
-* 5、需求规格说明
-    - 5.1 [用例图](05-Requirement/usecase_diagram.md)
-    - 5.2 活动图
-    - 5.3 领域模型
-    - 5.4 状态模型
-    - 5.6 补充说明
-* 6、设计
-    - 6.1 UI 设计
-    - 6.2 数据库设计
-    - 6.3 API 文档
-    - 6.4 软件架构文档
-* 7、生产规范与指南
-    - 7.1 代码规范
-    - 7.2 REST API设计规范
-    - 7.3 框架目录设计与逻辑架构与 ECB 的关系
-    - 7.4 部署文档
-* 8 会议记录
-* 9 项目总报告
-* 10 个人总结
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sysu-sasd-project/dashboard/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
