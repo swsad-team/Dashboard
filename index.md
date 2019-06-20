@@ -6,4 +6,4 @@ layout: default
 
 &nbsp;&nbsp; 
 
-* 1、[About](01-about) (项目概asd况)
+* 1、[About](01-about) (项目概况)
