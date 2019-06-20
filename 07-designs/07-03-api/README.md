@@ -1,0 +1,1 @@
+[link](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/master/other/api.yaml)
