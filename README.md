@@ -7,7 +7,7 @@ layout: default
 &nbsp;&nbsp; 
 
 * 1、[About](01-about) (项目概况)
-* 2、团队成员
+* 2、[团队成员](02-TeamMember/Readme.md)
 * 3、项目业务调研
 * 4、产品特性
 * 5、需求规格说明
