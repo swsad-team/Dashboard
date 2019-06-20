@@ -1,55 +1,31 @@
-# 数据格式
-
-## User
-- User分为**组织号**和**个人号**（*斜的数据为用户填写*）
-
-- **通用属性**
-  - uid （随机生成）
-  - *phone*
-  - *e-mail* （用phone或email这两个信息来登录）
-  - *name*
-  - *password*
-  - *isOrganization* （是否组织号）
-  - *icon* （头像，用户不选头像则有个默认的）
-  - coin （默认100）
-
-- **个人号**
-  - *realname*
-  - *birthYear*
-  - *gender*
-  - *studentId*
-
-- **组织号**
-  - *address* （组织所在地址）
-
-## Task
-  - **task**
-    - tid  (randomly get)
-    - publisherId （任务发布人的uid）
-    - *title* （如：“关于大学生每日游戏时间”）
-    - *description*
-    - *isQuestion* （是问卷调查还是其它任务）
-    - startTime
-    - *endTime*
-    - *reward* （悬赏金额）
-    - coinPool （奖金池，仅能整数，如20，需10人，则每人获2金）
-    - *numOfPeople* （所需人数）
-    - participant[] （存储参与者的uid）
-    - finisher[]
-    - questionnaire[]
-      - isRequired （必填）
-      - type （问答、单选、多选）
-      - title （问题题干）
-      - option[] （问答题为none，数组的值为选项内容，如苹果、香蕉）
-  
-  - **answer**
-    - tid （对应问题的任务id
-    - answer[]
-      - uid （回答者的id
-      - content[] （例：问答题"happy"，单选"0""1"，多选"012"）
-
+---
+layout: default
 ---
 
-# API
+# [](#TOC)目录
 
-1. Dashboard/api.yaml
+&nbsp;&nbsp; 
+
+* 1、[About](01-about) (项目概况)
+* 2、团队成员
+* 3、项目业务调研
+* 4、产品特性
+* 5、需求规格说明
+    - 5.1 [用例图](usecase_diagram.md)
+    - 5.2 活动图
+    - 5.3 领域模型
+    - 5.4 状态模型
+    - 5.6 补充说明
+* 6、设计
+    - 6.1 UI 设计
+    - 6.2 数据库设计
+    - 6.3 API 文档
+    - 6.4 软件架构文档
+* 7、生产规范与指南
+    - 7.1 代码规范
+    - 7.2 REST API设计规范
+    - 7.3 框架目录设计与逻辑架构与 ECB 的关系
+    - 7.4 部署文档
+* 8 会议记录
+* 9 项目总报告
+* 10 个人总结
