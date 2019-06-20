@@ -1,3 +1,3 @@
 ### Usecase Diagram  
 
-- ![pic](pics\usecase_diagram.png)
+- ![pic](pics/usecase_diagram.png)
