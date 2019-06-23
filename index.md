@@ -6,8 +6,8 @@ layout: default
 
 &nbsp;&nbsp; 
 
-* 1、[About](/01-about)（项目概况）
-* 2、[Team profile](/02-team-profile)（团队组建与分工）
+* 1、[About](01-about)（项目概况）
+* 2、[Team profile](02-team-profile)（团队组建与分工）
 * 3、[Investigation](03-invest)（项目前期调研/竞品分析）
 * 4、[Vision](04-vision)（项目愿景）
 * 5、[Product Backlog](05-backlog) （产品特性库）
@@ -21,7 +21,7 @@ layout: default
 * 7、[Design](07-designs)（设计说明书）
     - 7.1 [UI design](07-designs/07-01-ui)（界面设计）
     - 7.2 [Database design](07-designs/07-02-database)（数据库设计）
-    - 7.3 [Interface API design](07-designs/07-03-api)（接口 API 设计）
+    - 7.3 [Interface API design](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/master/other/api.yaml)（接口 API 设计）
     - 7.4 [Architecture design](07-designs/07-04-architecture)（架构设计）
     - 7.5 [Usecase design](07-designs/07-05-usecase)（用例设计）
 * 8、[生产规范与指南](08-standard)
