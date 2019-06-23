@@ -29,7 +29,7 @@ title: 关于团队
 |16340257|betsiga|[betsiga](https://github.com/betsiga)|竞品调查|
 |16340055|momo-study|[momo-study](https://github.com/momo-study)|前端开发|
 
-**具体分工与个人宣言**
+**具体分工**
 
 |昵称|分工内容|
 |:--:|:--:|
