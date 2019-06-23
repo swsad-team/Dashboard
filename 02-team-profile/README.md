@@ -22,7 +22,7 @@ title: 关于团队
 |学号|昵称|Github|岗位角色|
 |:--:|:--:|:--:|:--:|
 |16340202|Asd|[asdiijj](https://github.com/asdiijj)|项目经理、后端开发|
-|16340046|Dennis273|[Dennis273](https://github.com/Dennis273)|架构师、Web全栈|
+|16340046|Dennis273|[Dennis273](https://github.com/Dennis273)|架构师、Web 全栈、部署&运维|
 |16340221|kiddion|[kiddion](https://github.com/kiddion)|前端开发|
 |16340203|MockingT|[MockingT](https://github.com/MockingT)|产品经理|
 |16340056|Dmaxzj|[Dmaxzj](https://github.com/Dmaxzj)|UI设计师、前端开发|
@@ -34,7 +34,7 @@ title: 关于团队
 |昵称|分工内容|
 |:--:|:--:|
 |Asd|负责项目的进度管理，项目文档，以及部分后端API|
-|Dennis273|技术全栈，负责前后端的开发|
+|Dennis273|技术全栈，负责前后端的开发、负责部署项目至线上以及 CD|
 |kiddion|负责部分页面的前端界面开发|
 |MockingT|负责需求规格文档，用例图和各种模型建模|
 |Dmaxzj|负责前端界面UI的设计以及开发|
