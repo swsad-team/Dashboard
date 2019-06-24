@@ -43,17 +43,17 @@ title: 架构设计
 │   │   ├── AllTaskList.jsx
 │   │   ├── AnswerList.jsx
 │   │   ├── AppRouter.jsx
-│   │   ├── CheckAllBox.js
-│   │   ├── CreateSurvey.js
-│   │   ├── FillSurveyPage.js
-│   │   ├── HomePage.js
-│   │   ├── LoginForm.js
+│   │   ├── CheckAllBox.jsx
+│   │   ├── CreateSurvey.jsx
+│   │   ├── FillSurveyPage.jsx
+│   │   ├── HomePage.jsx
+│   │   ├── LoginForm.jsx
 │   │   ├── MyTaskList.jsx
-│   │   ├── NewTask.js
-│   │   ├── RegisterForm.js
+│   │   ├── NewTask.jsx
+│   │   ├── RegisterForm.jsx
 │   │   ├── SurveyAnswerContainer.jsx
 │   │   ├── SurveyWithAnswer.jsx
-│   │   ├── TaskBasicForm.js
+│   │   ├── TaskBasicForm.jsx
 │   │   ├── TaskFilter.jsx
 │   │   ├── TaskInfo.jsx
 │   │   ├── TaskInfoList.jsx
@@ -62,7 +62,7 @@ title: 架构设计
 │   ├── context
 │   │   └── index.js
 │   ├── index.css
-│   └── index.js
+│   └── index.jsx
 ├── .travis.yml
 ├── app.yaml
 ├── config-overrides.js
