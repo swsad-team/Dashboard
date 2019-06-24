@@ -1,1 +1,1 @@
-[link](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/master/other/api.yaml)
+[link](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/gh-pages/07-designs/07-03-api/api.yaml)

@@ -21,14 +21,14 @@ layout: default
 * 7、[Design](07-designs/README.md)（设计说明书）
     - 7.1 [UI design](07-designs/07-01-ui/README.md)（界面设计）
     - 7.2 [Database design](07-designs/07-02-database/README.md)（数据库设计）
-    - 7.3 [Interface API design](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/master/other/api.yaml)（接口 API 设计）
+    - 7.3 [Interface API design](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/gh-pages/07-designs/07-03-api/api.yaml)（接口 API 设计）
     - 7.4 [Architecture design](07-designs/07-04-architecture/README.md)（架构设计）
     - 7.5 [Usecase design](07-designs/07-05-usecase/README.md)（用例设计）
 * 8、[生产规范与指南](08-standard/README.md)
-    * 8.1 XX 代码规范
-    * 8.2 REST API 设计规范
-    * 8.3 架构设计、详细设计（BCE方法）到应用程序框架映射指南
-    * 8.4 部署说明
+    * 8.1 Earn It 代码规范(08-standard/08-01-code/README.md)
+    * 8.2 REST API 设计规范(08-standard/08-02-restful/README.md)
+    * 8.3 架构设计、详细设计（BCE方法）到应用程序框架映射指南(08-standard/08-03-structure/README.md)
+    * 8.4 部署说明(08-standard/08-04-run/README.md)
 * 9、[成品展示](09-display/README.md)
     - 9.1 XX短视频
     - 9.2 XX短视频
