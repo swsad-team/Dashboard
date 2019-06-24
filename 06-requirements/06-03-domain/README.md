@@ -8,3 +8,5 @@ title: 领域模型
 
 * 目录
 {:toc}
+- ![pic](pics/01.png)
+

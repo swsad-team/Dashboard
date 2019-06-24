@@ -4,28 +4,238 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>190</x>
-      <y>140</y>
-      <w>160</w>
-      <h>70</h>
+      <x>260</x>
+      <y>160</y>
+      <w>140</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>个人账号
 --
-uid
-password</panel_attributes>
+realname
+birthYear
+gender
+studentID</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>250</x>
-      <y>380</y>
-      <w>160</w>
+      <x>260</x>
+      <y>400</y>
+      <w>190</w>
       <h>70</h>
     </coordinates>
-    <panel_attributes>TemplateClass
+    <panel_attributes>组织账号
 --
-</panel_attributes>
+address(组织所在地址)</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>230</y>
+      <w>220</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>Task任务
+--
+tid(任务Id)
+title
+description
+publisherId
+isQestion(是否为调查问卷)
+startTime
+endTime
+reward(每个人得到的悬赏金)
+coinPool(奖金池，悬赏金总数)
+numOfPeople
+participant[](参与者Id)
+finisher[](完成者Id)
+questionnaire[](问卷内容)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>230</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+publishes &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;140.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>420</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+publishes &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>250</y>
+      <w>140</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>账号
+--
+phone
+e-mail
+password
+name
+icon
+coin
+uid</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>210</y>
+      <w>130</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;100.0;40.0;100.0;40.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>300</y>
+      <w>130</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;10.0;40.0;150.0;110.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>310</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>290</y>
+      <w>140</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>问卷答案Answer
+--
+tid(该任务Id)
+answer[]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>460</y>
+      <w>180</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>每个填写者的answer
+--
+uid(该回答者的Id)
+content[](每一题的回答)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>890</x>
+      <y>370</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+contains v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>560</y>
+      <w>220</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>调查问卷题目
+--
+isRequired(该题是否必填)
+type(问答/单选/多选)
+title(问题题干)
+option[](选择题答案)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>470</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+contains v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>90</y>
+      <w>350</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+&lt; contains</panel_attributes>
+    <additional_attributes>320.0;140.0;320.0;20.0;10.0;20.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>270</y>
+      <w>230</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+accepts &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;210.0;100.0</additional_attributes>
   </element>
 </diagram>
