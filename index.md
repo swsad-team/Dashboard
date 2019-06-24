@@ -28,7 +28,7 @@ layout: default
     * 8.1 [Earn It 代码规范](08-standard/08-01-code/README.md)
     * 8.2 [REST API 设计规范](08-standard/08-02-restful/README.md)
     * 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08-standard/08-03-structure/README.md)
-    * 8.4 [部署说明](08-standard/08-04-run/README.md)
+    * 8.4 [部署说明](08-standard/08-04-deployment/README.md)
 * 9、[成品展示](09-display/README.md)
     - 9.1 XX短视频
     - 9.2 XX短视频
