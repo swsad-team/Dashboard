@@ -1,9 +1,9 @@
 ---
 layout: default
-title: 架构设计
+title: 架构设计、详细设计（BCE方法）到应用程序框架映射指南
 ---
 
-# 架构设计
+# 架构设计、详细设计（BCE方法）到应用程序框架映射指南
 {:.no_toc}
 
 * 目录
@@ -74,7 +74,6 @@ title: 架构设计
 ### 后端
 ```
 .
-.
 ├── src
 │   ├── controller
 │   │   ├── task.js
@@ -107,11 +106,13 @@ title: 架构设计
 
 ## ECB
 
+> 逻辑架构对应项目的映射指南
+
 E - Entiry:
   - 系统数据，在本项目中为数据库相应的Model：用户User，任务Task和问卷结果Answer
 
 C - Controller:
-  - 后端服务器中的controller目录下的内容，接收来自界面的请求之后，对数据进行处理
+  - 对应后端服务器中的controller目录下的内容，接收来自界面的请求之后，对数据进行处理，并且返回数据
 
 B - Boundary:
   - 用户可以交互的Web端界面
