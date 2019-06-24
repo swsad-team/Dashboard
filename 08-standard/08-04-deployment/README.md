@@ -10,7 +10,9 @@ title: 部署说明
 - 目录
   {:toc}
 
-## 部署架构图![1](media/1.png)
+## 部署架构图
+
+![1](pics/1.png)
 
 ## 部署流程
 
@@ -51,7 +53,7 @@ MongoDB Atlas 时 MongoDB 提供的云数据库，其为免费用户提供了 M0
 
 考虑到静态资源部署问题，我们使用了 Cloudflare 提供的免费 CDN 服务来加速用户获取前端静态文件。
 
-## 其他问题
+## 其它问题
 
 在具体部署过程我们发现 Google App Engine 提供的域名 [project id].appspot.com (swsad-cloud.appspot.com) 由于 GFW 的问题无法在大陆地区访问。故我们通过申请阿里云的域名服务注册了域名 swsad.xyz，通过配置域名解析，实现了通过 swsad.xyz 来访问我们的服务。同时 GAE 也提供了免费的 SSL 证书，故这部分无需单独处理。
 

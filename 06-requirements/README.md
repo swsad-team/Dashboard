@@ -12,8 +12,8 @@ title: 需求规格说明书
 
 **目录**
 
-1. [用例建模](/06-02-uml/README.md)  
-    - 1.1 [程序完整用例图](/06-02-uml/README.md)
+1. [用例建模](/06-01-uml/README.md)  
+    - 1.1 [程序完整用例图](/06-01-uml/README.md)
 2. [用例，或特征，或业务流程描述](/06-02-usecase/README.md)
     - 2.1 [用户注册](/06-02-usecase/README.md#用户注册)
     - 2.2 [用户登录](/06-02-usecase/README.md#用户登录)
