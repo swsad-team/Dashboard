@@ -1,7 +1,6 @@
 ---
 layout: default
 title: 架构设计
-
 ---
 
 # BCE用例设计
