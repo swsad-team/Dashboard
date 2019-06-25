@@ -18,14 +18,15 @@ title: 设计说明书
     - 1.3 发布任务界面
     - 1.4 填写问卷界面
 2. [数据库设计](/07-02-database/README.md)
-    - 2.1 01-01-用户及权限数据逻辑设计（使用 "RBAC" "用户权限" 关键字检索 ）
-    - 2.2 01-02-XX子系统数据逻辑设计
+    - 2.1 [数据库逻辑图(ER图)](/07-02-database/README.md#数据库ER图)
+    - 2.2 [用户管理子系统](/07-02-database/README.md#User表)
+    - 2.3 [任务管理子系统](/07-02-database/README.md#Task表)
+    - 2.4 [答案管理子系统](/07-02-database/README.md#Answer表)
 3. [API 设计](http://petstore.swagger.io/?url=https://raw.githubusercontent.com/swsad-team/Dashboard/master/other/api.yaml)
 4. [软件架构设计](/07-04-architecture/README.md)
     - [逻辑架构](/07-04-architecture/README.md#逻辑架构)
     - [逻辑视图](/07-04-architecture/README.md#逻辑视图)
     - [物理视图](/07-04-architecture/README.md#物理视图)
-    - 部署方案设计(?)
 5. [用例或模块设计]
     - 5.1 XX业务用例设计
     - 5.2 XX功能设计
