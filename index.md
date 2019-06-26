@@ -31,12 +31,15 @@ layout: default
     - 8.4 [部署说明](08-standard/08-04-deployment/README.md)
 * 9、[成品展示](09-display/README.md)
     - 9.1 [程序演示视频]()
-* X1 [meeting-records](x1-meetings/README.md)
-    - inception meeting (yy/mm/dd)
-* X2 [KANBAN](X2-kanban/README.md)
-* X3 [auditing-records](x3-auditing/README.md)
-* X4 [Tech/Work Report](x4-techniques/README.md)
+* X1 meeting-records
+    - [inception meeting](x1-meetings/inception/README.md) (2019.03.15)
+    - [第一次迭代会议](x1-meetings/meeting1/README.md)  (2019.03.20)
+    - [线上小会议其一](x1-meetings/meeting1.5/README.md)  (2019.05.21)
+    - [第二次迭代会议](x1-meetings/meeting2/README.md)  (2019.06.05)
+    - [第三次迭代会议](x1-meetings/meeting3/README.md)  (2019.06.23)
+* X2 [KANBAN](x2-kanban/README.md)
+* X3 [Tech/Work Report](x4-techniques/README.md)
     - 学号-title
-* X5 [Final Report](x5-summary/README.md)
+* X4 [Final Report](x5-summary/README.md)
     * 学号-title
     * 小组分工与贡献率说明
