@@ -39,13 +39,13 @@ layout: default
     - [第三次迭代会议](x1-meetings/meeting3/README.md)  (2019.06.23)
 * X2 [KANBAN](x2-kanban/README.md)
 * X3 Tech/Work Report
-    - [16340202 Asd](x3-techniques/16340202/README.md)
-    - [16340046 Dennis273](x3-techniques/16340046/README.md)
-    - [16340221 kiddion](x3-techniques/16340221/README.md)
-    - [16340203 MockingT](x3-techniques/16340203/README.md)
-    - [16340056 Dmaxzj](x3-techniques/16340056/README.md)
-    - [16340257 betsiga](x3-techniques/16340257/README.md)
-    - [16340055 momo-study](x3-techniques/16340055/README.md)
+    - [16340202-Asd](x3-techniques/16340202/README.md)
+    - [16340046-使用 Google App Engine 部署 Web 应用](https://dennis273.github.io/deploy-using-google-app-engine.html)
+    - [16340221-kiddion](x3-techniques/16340221/README.md)
+    - [16340203-MockingT](x3-techniques/16340203/README.md)
+    - [16340056-Dmaxzj](x3-techniques/16340056/README.md)
+    - [16340257-betsiga](x3-techniques/16340257/README.md)
+    - [16340055-momo-study](x3-techniques/16340055/README.md)
 * X4 Final Report
     - [16340202 Asd](x4-summary/16340202/README.md)
     - [16340046 Dennis273](x4-summary/16340046/README.md)
@@ -56,12 +56,12 @@ layout: default
     - [16340055 momo-study](x4-summary/16340055/README.md)
     - [小组总结](x4-summary/team-report/README.md)
     - [小组分工与贡献率说明](x4-summary/team-report/README.md#)
-* X5 软件工程综合实验制品
-    - [安装部署说明]()
+* X5 软件工程综合实验文档
+    - [安装部署说明](x5-engineering/local-deployment.md)
     - [用户手册]()
-    - [源代码链接]
-      - [FrontEnd]
-      - [BackEnd]
-    - [软件需求规格说明书]
-    - [软件设计文档]
+    - [源代码链接](https://github.com/swsad-team)
+      - [FrontEnd](https://github.com/swsad-team/FrontEnd)
+      - [BackEnd](https://github.com/swsad-team/BackEnd)
+    - [软件需求规格说明书](06-requirements/README.md)
+    - [软件设计文档](07-designs/README.md)
     - [小组分工与贡献率说明]
