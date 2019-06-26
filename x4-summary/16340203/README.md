@@ -55,7 +55,7 @@ title: 个人总结
 
 ## 6、个人博客清单
 
-- [项目建模心得及总结](<https://mockingt.github.io/SWSAD_personal/>)
+- [项目建模心得及总结&git的使用](<https://mockingt.github.io/SWSAD_personal/>)
 
 ## 7、致谢
 
