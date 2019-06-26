@@ -38,8 +38,30 @@ layout: default
     - [第二次迭代会议](x1-meetings/meeting2/README.md)  (2019.06.05)
     - [第三次迭代会议](x1-meetings/meeting3/README.md)  (2019.06.23)
 * X2 [KANBAN](x2-kanban/README.md)
-* X3 [Tech/Work Report](x4-techniques/README.md)
-    - 学号-title
-* X4 [Final Report](x5-summary/README.md)
-    * 学号-title
-    * 小组分工与贡献率说明
+* X3 Tech/Work Report
+    - [16340202 Asd](x3-techniques/16340202/README.md)
+    - [16340046 Dennis273](x3-techniques/16340046/README.md)
+    - [16340221 kiddion](x3-techniques/16340221/README.md)
+    - [16340203 MockingT](x3-techniques/16340203/README.md)
+    - [16340056 Dmaxzj](x3-techniques/16340056/README.md)
+    - [16340257 betsiga](x3-techniques/16340257/README.md)
+    - [16340055 momo-study](x3-techniques/16340055/README.md)
+* X4 Final Report
+    - [16340202 Asd](x4-summary/16340202/README.md)
+    - [16340046 Dennis273](x4-summary/16340046/README.md)
+    - [16340221 kiddion](x4-summary/16340221/README.md)
+    - [16340203 MockingT](x4-summary/16340203/README.md)
+    - [16340056 Dmaxzj](x4-summary/16340056/README.md)
+    - [16340257 betsiga](x4-summary/16340257/README.md)
+    - [16340055 momo-study](x4-summary/16340055/README.md)
+    - [小组总结](x4-summary/team-report/README.md)
+    - [小组分工与贡献率说明](x4-summary/team-report/README.md#)
+* X5 软件工程综合实验制品
+    - [安装部署说明]()
+    - [用户手册]()
+    - [源代码链接]
+      - [FrontEnd]
+      - [BackEnd]
+    - [软件需求规格说明书]
+    - [软件设计文档]
+    - [小组分工与贡献率说明]
