@@ -16,7 +16,7 @@ npm install
 ```
 配置环境变量
 ```shell
-echo "API_URL=[YOUR API URL]" >>. env 
+echo "REACT_APP_API_URL=[YOUR API URL]" >>. env 
 ```
  构建静态文件
 ```shell
