@@ -18,7 +18,7 @@ title: 小组总结
 | **Development** | 80 | 85 | 85 |
 | - analysis | 15 | 10 | 10 |
 | - design spec | 25 | 5 | 25 |
-| - conding standard | 5 | 5 | 5 |
+| - coding standard | 5 | 5 | 5 |
 | - design | 20 | 5 | 25 |
 | - coding | 10 | 30 | 10 |
 | - code review | 0 | 20 | 5 |
