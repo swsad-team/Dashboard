@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: 0.9.0
+  version: 1.0.0
   title: Swagger Earnmoney
 host: localhost:3000
 basePath: '/'
@@ -175,18 +175,29 @@ paths:
           description: Invalid input (email, phone, coin, studentID, uid, isOrga)
         404:
           description: Not found user
-  /users/{uid}/check:
-    get:
+    delete:
       tags:
         - user
-      summary: User check to get 50 coin
+      summary: Delete user
       description: ''
       parameters:
         - name: uid
           in: path
           description: The uid of the user
           required: true
-          type: string
+          type: integer
+      responses:
+        200:
+          description: Successfully delete the user
+        400:
+          description: UNKNOWN_ERROR
+  /users/check:
+    post:
+      tags:
+        - user
+      summary: User check to get 50 coin
+      description: ''
+      parameters:
       responses:
         200:
           description: OK, add 50 coin, return the coin data
@@ -200,31 +211,6 @@ paths:
                 type: boolean
         404:
           description: Today is checked
-  /users/delete:
-    delete:
-      tags:
-        - user
-      summary: Delete user
-      description: ''
-      parameters:
-        - name: body
-          in: body
-          description: The uid & password for delete
-          required: true
-          schema:
-            type: object
-            properties:
-              uid:
-                type: integer
-              password:
-                type: string
-      responses:
-        200:
-          description: Successfully delete the user
-        400:
-          description: PASSWORD_INCORRECT
-        404:
-          description: Not found user
   /tasks:
     get:
       tags:
@@ -332,24 +318,6 @@ paths:
             $ref: "#/definitions/Task"
         404:
           description: Not found task
-    delete:
-      tags:
-        - task
-      summary: Delete task
-      description: Delete task & answerList
-      parameters:
-        - name: tid
-          in: path
-          description: The tid of the task
-          required: true
-          type: string
-      responses:
-        200:
-          description: Successfully delete the task
-        # 400:
-        #   description: Invalid
-        404:
-          description: Not found task
     patch:
       tags:
         - task
@@ -372,11 +340,11 @@ paths:
           description: Successfully update
         404:
           description: Not found task
-  /tasks/{tid}/participate/{uid}:
+  /tasks/{tid}/questionnaire:
     get:
       tags:
         - task
-      summary: User participate a task
+      summary: Get questionnaire of the task
       description: ''
       parameters:
         - name: tid
@@ -384,40 +352,92 @@ paths:
           description: The tid of task
           required: true
           type: integer
-        - name: uid
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                isRequired:
+                  type: boolean
+                questionType:
+                  type: string
+                  enum:
+                    - fill
+                    - single
+                    - multiple
+                questionTitle:
+                  type: string
+                option:
+                  type: array
+                  items:
+                    type: string
+        400:
+          description: Not Found Task
+        404:
+          description: Not Questionnaire
+  /tasks/{tid}/attend:
+    post:
+      tags:
+        - task
+      summary: User attend a task
+      description: ''
+      parameters:
+        - name: tid
           in: path
-          description: The uid of user
+          description: The tid of task
           required: true
           type: integer
       responses:
         200:
           description: OK
+        400:
+          description: TASK_NOT_VALID
         404:
-          description: Not found task/user
+          description: Not found task
           schema:
             type: string
             enum: ['task', 'user']
-  /tasks/{tid}/answer:
+  /tasks/{tid}/finish:
     post:
       tags:
-        - answer
-      summary: Store an answer
-      description: Store answer of a task(questionnaire)
+        - task
+      summary: Finish a task
+      description: ''
       parameters:
         - name: tid
           in: path
           description: the tid of the task
           required: true
           type: integer
-        - name: body
-          in: body
-          description: use tid to find answerList, to insert answer
-          required: true
-          schema:
-            $ref: "#/definitions/Answer"
       responses:
         200:
           description: OK
+        400:
+          description: USER_NOT_IN_TASK
+        404:
+          description: Not found task(questionnaire)
+  /tasks/{tid}/cancel:
+    post:
+      tags:
+        - task
+      summary: Cancel a task
+      description: ''
+      parameters:
+        - name: tid
+          in: path
+          description: the tid of the task
+          required: true
+          type: integer
+      responses:
+        200:
+          description: OK
+        400:
+          description: TASK_NOT_VALID / UNKOWN_ERROR
+        403:
+          description: NOT_PUBLISHER
         404:
           description: Not found task(questionnaire)
   /tasks/{tid}/answers:
