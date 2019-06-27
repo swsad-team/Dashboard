@@ -23,6 +23,7 @@ title: 个人总结
 - Task 建模
 - Task Controller
 - User Controller
+- User 功能测试
 - 后端路由
 - TaskList 展示以及筛选组件设计
 - TaskInfo 部分组件
@@ -40,7 +41,7 @@ title: 个人总结
   我在 [TaskListContainer](https://github.com/swsad-team/FrontEnd/blob/master/src/components/TaskListContainer.jsx) 组件中通过将筛选选项、排序选项以及获取 Task 的方法从视图组件抽离，使用了类似高阶组件（HOC）的方法使得不同页面（如全部任务页、参加的任务页等）的代码非常简洁明确。
 
 - 项目部署
-  我个人对于 CI/CD 以及云端部署等流程非常有兴趣。在本次项目中我通过 Travis CI、Google App Engine 以及 MongoDB Atals 结合完成了比较顺畅的开发至部署流程。避免了配置服务器环境以及处理开发环境与生产环境差异。
+  我个人对于 CI/CD 以及云端部署等流程非常有兴趣。在本次项目中我通过 Travis CI、Google App Engine 以及 MongoDB Atals 独立完成了比较顺畅的开发至部署流程。避免了配置服务器环境以及处理开发环境与生产环境差异。
 
 ## PSP 2.1 表格
 
@@ -63,13 +64,11 @@ title: 个人总结
 
 ## 项目贡献度
 
-截止至 2019.06.25 23:50
-
 - BackEnd 仓库
-  ![BackEnd 仓库贡献](pics/1.jpg)
+  ![BackEnd 仓库贡献](pics/BackEnd.png)
 
 - FrontEnd 仓库
-  ![FrontEnd 仓库贡献](pics/2.jpg)
+  ![FrontEnd 仓库贡献](pics/FrontEnd.png)
 
 ## 个人博客清单
 
