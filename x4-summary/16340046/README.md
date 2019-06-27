@@ -52,7 +52,7 @@ title: 个人总结
 | **Development**                         |    85    |
 | - analysis                              |    10    |
 | - design spec                           |    5     |
-| - conding standard                      |    5     |
+| - coding standard                      |    5     |
 | - design                                |    5     |
 | - coding                                |    30    |
 | - code review                           |    20    |
