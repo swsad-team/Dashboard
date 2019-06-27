@@ -46,7 +46,7 @@ title: 个人总结
 | - postmortem & process improvement plan |    2     |
 
 ## 贡献图表截图
-![](./image/Contribution.png)
+![](./pics/Contribution.png)
 
 ## 个人博客清单
 
