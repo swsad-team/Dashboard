@@ -62,14 +62,16 @@ title: 个人总结
 截止至 2019.06.27
 
 - BackEnd 仓库
-  ![BackEnd 仓库贡献](pics/1.jpg)
+
+  ![BackEnd 仓库贡献](pics/1.png)
 
 - Dashboard 仓库
-  ![Dashboard 仓库贡献](pics/2.jpg)
+
+  ![Dashboard 仓库贡献](pics/2.png)
 
 ## 个人博客清单
 
-- [Swagger]()
+- [Swagger编写API文档](../../x3-techniques/16340202/README.md)
 
 ## 致谢
 
