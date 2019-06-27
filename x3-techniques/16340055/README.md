@@ -25,16 +25,19 @@ Ant Design 里面有大量的页面布局参考，还有非常丰富以及种类
 ## 3、UI设计
 ### 准备工作
 首先登录到[产品原型设计与团队实时协作平台](https://www.xiaopiu.com)，进入到工作台，开始进行我们的UI设计。<br/>
-
-
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/pics/1.png)
+<br/>
 Ant Design原型设计开发工具中有很多组件，非常方便。<br/>
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/pics/2.png)
 
 ### 设计思路
 这次的实验主要是开发一个类似悬赏任务的网页，所以主要UI包括了常规的注册登录页面，进行操作和显示任务的主界面，用户详情页面以及发布任务的页面，根据任务类型的不同，又分为普通任务和问卷的页面
 
 ### 设计过程
 根据上面的设计思路，需要根据不同的页面确定元素，例如，在注册页面要确定需要用户填写的信息，包括学号，姓名，昵称等等，显示任务的list的涉及内容，以及用户详情的显示内容等等，所以一共设计了九个不同的页面，值得一提的是，在原型开发工具中，支持对事件的处理，因此页面之间可以用事件关联起来
-
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/pics/3.png)
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/pics/4.png)
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/pics/5.png)
 
 ## 4、总结
 这次用Ant Design原型设计工具，初步用起来不太容易上手，主要是其组件库虽广，但想要找到合适的并不容易，而且部分组件也不能支持自定义，所以想要找到合适的组件有些困难，其次事件和状态的添加有些难以处理。但总体来说，Ant Design大大降低了网页开发中UI设计的难度，对初学人士也比较友好，非常方便
