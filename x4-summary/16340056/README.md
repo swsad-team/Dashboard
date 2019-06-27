@@ -79,7 +79,7 @@ title: 个人总结
 
 ## 个人博客清单
 
-- [Git初探](../../x3-techniques/16340056/README.md)
+- [Git合并分支的方法](../../x3-techniques/16340056/README.md)
 
 ## 致谢
 
