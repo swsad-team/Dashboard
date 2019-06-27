@@ -41,11 +41,11 @@ layout: default
 * X3 Tech/Work Report
     - [16340202 - Swagger编写API文档](x3-techniques/16340202/README.md)
     - [16340046 - 使用 Google App Engine 部署 Web 应用](https://dennis273.github.io/deploy-using-google-app-engine.html)
-    - [16340221 - kiddion](x3-techniques/16340221/README.md)
-    - [16340203 - MockingT](x3-techniques/16340203/README.md)
+    - [16340221 - 使用axios调用后端接口](x3-techniques/16340221/README.md)
+    - [16340203 - 项目建模总结 & Git使用总结](x3-techniques/16340203/README.md)
     - [16340056 - Dmaxzj](x3-techniques/16340056/README.md)
     - [16340257 - betsiga](x3-techniques/16340257/README.md)
-    - [16340055 - momo-study](x3-techniques/16340055/README.md)
+    - [16340055 - Ant Design原型设计开发工具](x3-techniques/16340055/README.md)
 * X4 Final Report
     - [16340202 Asd](x4-summary/16340202/README.md)
     - [16340046 Dennis273](x4-summary/16340046/README.md)
@@ -55,4 +55,4 @@ layout: default
     - [16340257 betsiga](x4-summary/16340257/README.md)
     - [16340055 momo-study](x4-summary/16340055/README.md)
     - [小组总结](x4-summary/team-report/README.md)
-    - [小组分工与贡献率说明](x4-summary/team-report/README.md#综合贡献度分配)
+    - [小组分工与贡献率说明](x4-summary/team-report/README.md#3综合贡献度分配)
