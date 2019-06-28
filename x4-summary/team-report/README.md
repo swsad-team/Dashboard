@@ -11,22 +11,22 @@ title: 小组总结
 
 ## 1、PSP2.1汇总表
 
-|  | 谭发豪 | 陈祐洋 | 谭江华 |
-| :- | :-: | :-: | :-: |
-| **Planning** | 10 | 10 | 10 |
-| - estimate | 10 | 10 | 10 |
-| **Development** | 80 | 85 | 85 |
-| - analysis | 15 | 10 | 10 |
-| - design spec | 25 | 5 | 25 |
-| - coding standard | 5 | 5 | 5 |
-| - design | 20 | 5 | 25 |
-| - coding | 10 | 30 | 10 |
-| - code review | 0 | 20 | 5 |
-| - test | 5 | 10 | 5 |
-| **Report** | 10 | 5 | 5 |
-| - test report | 5 | 2 | 2 |
-| - size measurement | 1 | 2 | 2 |
-| - postmortem & process improvement plan | 4 | 1 | 1 |
+|  | 谭发豪 | 陈祐洋 | 谭江华 | 王睿泽 | 邓子杰 | 邓茅坤 |
+| :- | :-: | :-: | :-: | :-: | :-: | :-: |
+| **Planning** | 10 | 10 | 10 | 10 | 10 | 10 |
+| - estimate | 10 | 10 | 10 | 10 | 10 | 10 |
+| **Development** | 80 | 85 | 85 | 85 | 80 | 80 |
+| - analysis | 15 | 10 | 10 | 15 | 15 | 20 |
+| - design spec | 25 | 5 | 25 | 5 | 15 | 10 |
+| - coding standard | 5 | 5 | 5 | 5 | 5 | 5 |
+| - design | 20 | 5 | 25 | 15 | 20 | 15 |
+| - coding | 10 | 30 | 10 | 20 | 20 | 10 |
+| - code review | 0 | 20 | 5 | 15 | 0 | 10 |
+| - test | 5 | 10 | 5 | 10 | 5 | 10 |
+| **Report** | 10 | 5 | 5 | 5 | 10 | 10 |
+| - test report | 5 | 2 | 2 | 1 | 5 | 2 |
+| - size measurement | 1 | 2 | 2 | 2 | 1 | 3 |
+| - postmortem & process improvement plan | 4 | 1 | 1 | 2 | 4 | 5 |
 
 ## 2、贡献图表
 

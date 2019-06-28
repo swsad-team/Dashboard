@@ -25,24 +25,23 @@ title: 个人总结
 - 学习使用Ant Design原型设计开发工具，参考各系统的设计，给出一套界面
 
 ## 3、PSP2.1统计
-|         | Time(%)   |  
-| :--------  | :-----:   | 
-| **Planning**       | 10     |  
-| estimate |   10 |   
-| **Development**       | 80      |  
+|         | Time(%)   |
+| :--------  | :-----:   |
+| **Planning**       | 10     |
+| estimate |   10 |
+| **Development**       | 80      |
 | analysis | 20 |
 | design spec| 5 |
-| estimate | 5 | 
-|coding standard| 5|
-|design| 15 |
-|coding| 10 |
-|coding review | 10|
+| estimate | 5 |
+| coding standard| 5 |
+| design| 15 |
+| coding| 10 |
+| coding review | 10|
 | test | 10|
-|**report** | 10 |
-| test report | 2 | 
+| **report** | 10 |
+| test report | 2 |
 | size measurement | 3 |
 | postmortem & process  imporvement plan | 5 |
-
 
 ## 4、贡献图表截图
 

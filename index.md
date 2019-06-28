@@ -29,8 +29,8 @@ layout: default
     - 8.2 [REST API 设计规范](08-standard/08-02-restful/README.md)
     - 8.3 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08-standard/08-03-structure/README.md)
     - 8.4 [部署说明](08-standard/08-04-deployment/README.md)
-* 9、[成品展示](09-display/README.md)
-    - 9.1 [程序演示视频]()
+* 9、成品展示
+    - 9.1 [程序演示视频](http://player.youku.com/embed/XNDI0NzMyMTE1Mg)
 * X1 meeting-records
     - [inception meeting](x1-meetings/inception/README.md) (2019.03.15)
     - [第一次迭代会议](x1-meetings/meeting1/README.md)  (2019.03.20)
@@ -41,9 +41,9 @@ layout: default
 * X3 Tech/Work Report
     - [16340202 - Swagger编写API文档](x3-techniques/16340202/README.md)
     - [16340046 - 使用 Google App Engine 部署 Web 应用](https://dennis273.github.io/deploy-using-google-app-engine.html)
-    - [16340221 - 使用axios调用后端接口](x3-techniques/16340221/README.md)
+    - [16340221 - 使用axios调用后端接口](https://blog.csdn.net/kid_hw/article/details/93927253)
     - [16340203 - 项目建模总结 & Git使用总结](x3-techniques/16340203/README.md)
-    - [16340056 - Dmaxzj](x3-techniques/16340056/README.md)
+    - [16340056 - Git合并分支的方法](x3-techniques/16340056/README.md)
     - [16340257 - betsiga](x3-techniques/16340257/README.md)
     - [16340055 - Ant Design原型设计开发工具](x3-techniques/16340055/README.md)
 * X4 Final Report
