@@ -44,9 +44,13 @@ title: 个人总结
 | postmortem & process  imporvement plan | 5 |
 
 ## 4、贡献图表截图
+![](https://github.com/swsad-team/Dashboard/blob/gh-pages/x4-summary/16340055/pics/1.png)
+
+<br/>
 
 ## 5、个人博客清单
+[Ant Design原型设计心得](https://github.com/swsad-team/Dashboard/blob/gh-pages/x3-techniques/16340055/README.md)
 
-
+<br/>
 ## 6、致谢
 感谢@Dennis273和@Dmaxzj在UI设计和前端开发上给我的帮助
